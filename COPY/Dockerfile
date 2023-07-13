@@ -1,4 +1,4 @@
 FROM ubuntu
-RUN apt-get install nginx -y
+RUN apt-get install nginx 
 RUN rm -rf /usr/share/nginx/html/index.html
 COPY /Devops Resume.pdf /usr/share/nginx
