@@ -1,5 +1,4 @@
-FROM centos
-RUN yum install epel-release -y
-RUN yum install nginx 
+FROM ubuntu
+RUN apt-get install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
 COPY /Devops Resume.pdf /usr/share/nginx
